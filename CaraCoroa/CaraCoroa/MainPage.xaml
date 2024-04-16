@@ -19,6 +19,10 @@
                 HorizontalTextAlignment="Center">
                 
             </Label>
+            <Image x:Name="ImgHeadTails"
+                   Source="moeda_cara.jpeg"
+                   WidthRequest="200"
+                   HeightRequest="200"/>
             <Picker 
                 x:Name="Picker"
                 Title="Selecione cara ou coroa">
