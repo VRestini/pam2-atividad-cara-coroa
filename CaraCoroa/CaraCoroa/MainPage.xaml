@@ -8,36 +8,6 @@
             Padding="30,0"
             Spacing="25">
 
-            <Label
-                FontSize="Title"
-                HorizontalTextAlignment="Center">
-                Cara ou Coroa
-            </Label>
-            <Label
-                x:Name="ResultHeadTail"
-                FontSize="Medium"
-                HorizontalTextAlignment="Center">
-                
-            </Label>
-            <Image x:Name="ImgHeadTails"
-                   Source="moeda_cara.jpeg"
-                   WidthRequest="200"
-                   HeightRequest="200"/>
-            <Picker 
-                x:Name="Picker"
-                Title="Selecione cara ou coroa">
-                <Picker.Items>
-                    <x:String>Cara</x:String>
-                    <x:String>Coroa</x:String>
-                </Picker.Items>
-            </Picker>
-            <Button 
-                x:Name="ButtonHeadTails"
-                Clicked="Button_ClickedHeadTails"
-                Text="Clique para rodar a moeda">
-                
-            </Button>
-
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaraCoroa.Views.CoinView"
+             Title="CoinView">
+    <VerticalStackLayout
+    Padding="30,0"
+    Spacing="25">
+
+        <Label
+        FontSize="Title"
+        HorizontalTextAlignment="Center"
+        Text="Cara ou Coroa">
+        </Label>
+
+        <Label
+        x:Name="ResultHeadTail"
+        FontSize="Medium"
+        HorizontalTextAlignment="Center">
+
+        </Label>
+
+        <Image x:Name="ImgHeadTails"
+           Source="moeda_cara.jpeg"
+           WidthRequest="200"
+           HeightRequest="200"/>
+
+        <Picker 
+        x:Name="Picker"
+        Title="Selecione cara ou coroa">
+            <Picker.Items>
+                <x:String>Cara</x:String>
+                <x:String>Coroa</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button 
+        x:Name="ButtonHeadTails"
+        Clicked="ButtonHeadTails_Clicked"
+        Text="Clique para rodar a moeda">
+        </Button>
+
+    </VerticalStackLayout>
+</ContentPage>
