@@ -14,7 +14,7 @@ namespace CaraCoroa.Models
         public string Jogar()
         {
             int ladoSorteado = new Random().Next(2);
-            Lado = ladoSorteado == 0 ? "Cara" : "Coroa";
+            Lado = ladoSorteado == 0 ? "cara" : "coroa";
            
             return (Lado);
         }
@@ -22,7 +22,7 @@ namespace CaraCoroa.Models
         public string Jogar(string ladoEscolhido)
         {
             int ladoSorteado = new Random().Next(2);
-            Lado = ladoSorteado == 0 ? "Cara" : "Coroa";
+            Lado = ladoSorteado == 0 ? "cara" : "coroa";
             string Resultado = Lado == ladoEscolhido 
                 ? $"Parabéns, você pediu {ladoEscolhido} e deu {Lado}" 
                 : $"Que pena, você pediu {ladoEscolhido} e deu {Lado}";

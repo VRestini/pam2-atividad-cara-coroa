@@ -16,7 +16,8 @@
         <Label
         x:Name="ResultHeadTail"
         FontSize="Medium"
-        HorizontalTextAlignment="Center">
+        HorizontalTextAlignment="Center"
+        Text="{Binding Resultado}">
 
         </Label>
 
